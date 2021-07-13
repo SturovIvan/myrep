@@ -9,13 +9,13 @@ jobs:
 
     steps:
               echo Hello, world!
-              jobs:
+            
   # This workflow contains a single job called "build"
   test:
       steps:
               echo Add other actions to build,
-              jobs:
+              
   # This workflow contains a single job called "build"
   compilate:
-        steps:    
+        steps:   
         echo test, and deploy your proj
