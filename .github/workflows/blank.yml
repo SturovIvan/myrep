@@ -24,8 +24,9 @@ jobs:
           aws-access-key-id      : ${{ secrets.MY_AWS_KEY }}
           aws-secret-access-key  : ${{ secrets.MY_AWS_KEY2 }}
           aws-region             : ${{ env.AWS_REGION_NAME }}     
-     
-      - name: copy to s3
-        run : aws s3 sync * s3://mybacketsss
+      - name: sync
+      - uses: actions/checkout@master
+      - uses: myrep/s3-sync-action@master
+        
       - name: print ez jobs
         run : echo " finish ez"
