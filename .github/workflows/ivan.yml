@@ -5,7 +5,7 @@ env:
    EB_PACKAGE_S3_BUCKET_NAME : "mybacketsss"
    EB_APPLICATION_NAME       : "myapplication"
    EB_ENVIRONMENT_NAME       : "myapplication-env"
-   DEPLOY_PACKAGE_NAME       : "ivan_app_${{ github.sha }}"
+   DEPLOY_PACKAGE_NAME       : "${{ github.sha }}"
    AWS_REGION_NAME           : "us-west-2"
    
 on:
