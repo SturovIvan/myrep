@@ -4,9 +4,8 @@ name: IvanYa
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: 
+        -master
 
   workflow_dispatch:
 
@@ -21,5 +20,5 @@ jobs:
   myprod:
     runs-on: ubuntu-latest
     steps:
-    -name: prod
-     run : echo "worldd"
+    - name: prod
+      run : echo "worldd"
